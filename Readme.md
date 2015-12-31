@@ -58,6 +58,7 @@ Todo #6: Refactor returns from test functions in YAD_t.cpp to work with
 =====================================================================
 Included Tests =(9)==== see YAD_t.cpp
 ===================================================================== 
+
 wiki page:  		https://en.wikipedia.org/wiki/Markov_algorithm
 Rosettacode.org page: 	http://rosettacode.org/wiki/Execute_a_Markov_algorithm
 YAD Studio page: 	https://github.com/Yad-Studio/YAD-Studio
@@ -94,6 +95,7 @@ Test# Details
 =====================================================================
 Sample console app output running Rosetta.ruleset3.yad
 =====================================================================
+
 Details from test file: Rosetta.ruleset3.yad
 Source: NF Syntax testing rules
 A -> apple
