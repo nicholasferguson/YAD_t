@@ -62,7 +62,7 @@ Included Tests =(9)==== see YAD_t.cpp
 wiki page:  		https://en.wikipedia.org/wiki/Markov_algorithm
 Rosettacode.org page: 	http://rosettacode.org/wiki/Execute_a_Markov_algorithm
 YAD Studio page: 	https://github.com/Yad-Studio/YAD-Studio
-
+===================================================================== 
 Test# Details 
 1) From wiki page.   ( Hard coded test. )
    Input:   I bought a B of As from T S.
@@ -114,9 +114,9 @@ a never used ->. terminating rule
 
 History:
 // I bought a B of As W my Bgage from T S.
-
+===================================================================== 
 Engine Parsed Rules from file
-
+===================================================================== 
 Rule: A0apple
 Rule: WWWW0with
 Rule: Bgage0->.*
@@ -127,58 +127,59 @@ Rule: S0shop.
 Rule: T0the
 Rule: the shop0my brother
 Rule: a never used1terminating rule
-
+===================================================================== 
 Input_string before it is transformed: I bought a B of As W my Bgage from T S
-
+===================================================================== 
 Output from running algorithm:
 Step # 1
 Rule: A -> apple
 Before: I bought a B of As W my Bgage from T S
 After: I bought a B of apples W my Bgage from T S
-
+===================================================================== 
 Step # 2
 Rule: Bgage -> ->.*
 Before: I bought a B of apples W my Bgage from T S
 After: I bought a B of apples W my ->.* from T S
-
+===================================================================== 
 Step # 3
 Rule: B -> bag
 Before: I bought a B of apples W my ->.* from T S
 After: I bought a bag of apples W my ->.* from T S
-
+===================================================================== 
 Step # 4
 Rule: ->.* -> money
 Before: I bought a bag of apples W my ->.* from T S
 After: I bought a bag of apples W my money from T S
-
+===================================================================== 
 Step # 5
 Rule: W -> WW
 Before: I bought a bag of apples W my money from T S
 After: I bought a bag of apples WW my money from T S
-
+===================================================================== 
 Step # 6
 Rule: W -> WW
 Before: I bought a bag of apples WW my money from T S
 After: I bought a bag of apples WWW my money from T S
-
+===================================================================== 
 Step # 7
 Rule: W -> WW
 Before: I bought a bag of apples WWW my money from T S
 After: I bought a bag of apples WWWW my money from T S
-
+===================================================================== 
 Step # 8
 Rule: WWWW -> with
 Before: I bought a bag of apples WWWW my money from T S
 After: I bought a bag of apples with my money from T S
-
+===================================================================== 
 Step # 9
 Rule: S -> shop.
 Before: I bought a bag of apples with my money from T S
 After: I bought a bag of apples with my money from T shop.
-
+===================================================================== 
 Step # 10
 Rule: T -> the
 Before: I bought a bag of apples with my money from T shop.
 After: I bought a bag of apples with my money from the shop.
-
+===================================================================== 
 Final string output from running algorithm: I bought a bag of apples with my money from the shop.
+===================================================================== 
