@@ -100,16 +100,16 @@ Sample console app output running Rosetta.ruleset3.yad
 ...
 Details from test file: Rosetta.ruleset3.yad
 Source: NF Syntax testing rules
-A -> apple
-WWWW -> with
-Bgage -> ->.*
-B -> bag
-->.* -> money
-W -> WW
-S -> shop.
-T -> the
-the shop -> my brother
-a never used ->. terminating rule
+- A -> apple
+- WWWW -> with
+- Bgage -> ->.*
+- B -> bag
+- ->.* -> money
+- W -> WW
+- S -> shop.
+- T -> the
+- the shop -> my brother
+- a never used ->. terminating rule
 ...
 
 
@@ -135,53 +135,44 @@ Input_string before it is transformed: I bought a B of As W my Bgage from T S
 Output from running algorithm:
 ...
 ###### Step # 1
-Rule: A -> apple
-Before: I bought a B of As W my Bgage from T S
-After: I bought a B of apples W my Bgage from T S
-
+- Rule: A -> apple
+- Before: I bought a B of As W my Bgage from T S
+- After: I bought a B of apples W my Bgage from T S
 ###### Step # 2
-Rule: Bgage -> ->.*
-Before: I bought a B of apples W my Bgage from T S
-After: I bought a B of apples W my ->.* from T S
-
+- Rule: Bgage -> ->.*
+- Before: I bought a B of apples W my Bgage from T S
+- After: I bought a B of apples W my ->.* from T S
 ###### Step # 3
-Rule: B -> bag
-Before: I bought a B of apples W my ->.* from T S
-After: I bought a bag of apples W my ->.* from T S
-
+- Rule: B -> bag
+- Before: I bought a B of apples W my ->.* from T S
+- After: I bought a bag of apples W my ->.* from T S
 ###### Step # 4
-Rule: ->.* -> money
-Before: I bought a bag of apples W my ->.* from T S
-After: I bought a bag of apples W my money from T S
-
+- Rule: ->.* -> money
+- Before: I bought a bag of apples W my ->.* from T S
+- After: I bought a bag of apples W my money from T S
 ###### Step # 5
-Rule: W -> WW
-Before: I bought a bag of apples W my money from T S
-After: I bought a bag of apples WW my money from T S
-
+- Rule: W -> WW
+- Before: I bought a bag of apples W my money from T S
+- After: I bought a bag of apples WW my money from T S
 ###### Step # 6
-Rule: W -> WW
-Before: I bought a bag of apples WW my money from T S
-After: I bought a bag of apples WWW my money from T S
-
+- Rule: W -> WW
+- Before: I bought a bag of apples WW my money from T S
+- After: I bought a bag of apples WWW my money from T S
 ###### Step # 7
-Rule: W -> WW
-Before: I bought a bag of apples WWW my money from T S
-After: I bought a bag of apples WWWW my money from T S
-
+- Rule: W -> WW
+- Before: I bought a bag of apples WWW my money from T S
+- After: I bought a bag of apples WWWW my money from T S
 ###### Step # 8
-Rule: WWWW -> with
-Before: I bought a bag of apples WWWW my money from T S
-After: I bought a bag of apples with my money from T S
-
+- Rule: WWWW -> with
+- Before: I bought a bag of apples WWWW my money from T S
+- After: I bought a bag of apples with my money from T S
 ###### Step # 9
-Rule: S -> shop.
-Before: I bought a bag of apples with my money from T S
-After: I bought a bag of apples with my money from T shop.
-
+- Rule: S -> shop.
+- Before: I bought a bag of apples with my money from T S
+- After: I bought a bag of apples with my money from T shop.
 ###### Step # 10
-Rule: T -> the
-Before: I bought a bag of apples with my money from T shop.
-After: I bought a bag of apples with my money from the shop.
+- Rule: T -> the
+- Before: I bought a bag of apples with my money from T shop.
+- After: I bought a bag of apples with my money from the shop.
 ...
 Final string output from running algorithm: I bought a bag of apples with my money from the shop.
