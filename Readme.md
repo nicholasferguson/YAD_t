@@ -38,9 +38,9 @@ Done ====
 =====================================================================
 Todo =====
 =====================================================================
-Todo #1 When this app loads up rules from a file...
-$ -> S*   "works"
-$->S*     does not work.  Parse of '->' and '->.' requres spaces.
+Todo #1 When this app loads up rules from a file.\n
+$ -> S*   "works"\n
+$->S*     does not work.  Parse of '->' and '->.' requres spaces.\n
 
 Todo #2: Clean up wc2rx.cpp
 	     It is a bit hacked to run these nine examples.
