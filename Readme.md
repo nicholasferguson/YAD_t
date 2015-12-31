@@ -5,7 +5,7 @@ Into.  Markov Algorithm.  Ported from QT/YAD Studio into a std/boost console app
 =====================================================================
 This was used a preliminary vehicle to study implementations of Markov Algorithms
 
-I extraced Markov Algorithm related files from Yad.Studio, https://github.com/Yad-Studio/YAD-Studio/	
+I extracted Markov Algorithm related files from Yad.Studio, https://github.com/Yad-Studio/YAD-Studio/	
 and ported these files from QT over to std / boost, as a Visual Studio 2013 console application
 
 You can run YAD Studio as a checker.  This console app will run
@@ -28,11 +28,12 @@ You can comment out various test functions in its main().
 =====================================================================
 Done ====
 =====================================================================
-* Extractecd files from YAD Studio and QT to work Markov Algorithm files from YAD Studio.
+* Extracted files from YAD Studio and QT to work Markov Algorithm files from YAD Studio.
 * Converted these files from QT over to std and boost
 * This is a Visual Studio 2013 console application.
 * Also converted one function from QT, wc2rx.  See wc2rx.cpp
-* Made wc2rx friendly to five rule sets from Rosettacode.org
+  Made wc2rx friendly to five rule sets from Rosettacode.org
+  
 =====================================================================
 Todo =====
 =====================================================================
@@ -51,8 +52,9 @@ Todo #4: Refactor Preprocessor OUTPUT=true to control std:cout's
 Todo #5: Reading in file, line starting as //TASK becomes ASK.
          Correction requires a refactor of std::string rstrip(const std::string& str) in YadFile.cpp
 
-Todo #6: Refactor returns from test functions in YAD_t.cpp to work wtih 
-		 std::string CompareTestResults(std::string filename, std::string input)
+Todo #6: Refactor returns from test functions in YAD_t.cpp to work with
+		 See: std::string CompareTestResults(std::string filename, std::string input)
+		 
 =====================================================================
 Included Tests =(9)==== see YAD_t.cpp
 ===================================================================== 
@@ -88,6 +90,7 @@ Test# Details
 9) From Rosettacode.org  Rosetta.ruleset5.yad (Turing machine: three-state busy beaver)
    Input:  000000A000000
    Output: 00011H1111000
+   
 =====================================================================
 Sample console app output running Rosetta.ruleset3.yad
 =====================================================================
