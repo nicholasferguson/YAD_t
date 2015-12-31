@@ -65,33 +65,33 @@ YAD Studio page: 	https://github.com/Yad-Studio/YAD-Studio
 
 ===================================================================== 
 Test# Details 
-#1 From wiki page.   ( Hard coded test. )
-   Input:   I bought a B of As from T S.
-   Output:  I bought a bag of apples from my brother.
-#2 From wiki page.   ( Hard coded test. )
-   Input: 101
-   Output: |||||  ( binary 101 into base 10 using sticks....5 sticks)
-#3 From YAD Studio. I renamed their file renamed as YAD.Studo.mirrow.yad
-   Input: cabbbbaaaabbbbaabbcccccc
-   Output:
-#4 From YAD Studio. I renamed their file renamed as YAD.Studo.multiply.yad
-   Input: |||#||   i.e. 3*2
-   Output ||||||   i.e. 6
-#5 From Rosettacode.org  Rosetta.ruleset1.yad (This rules file is extracted from Wikipedia)
-   Input:  I bought a B of As from T S
-   Output: I bought a bag of apples from my brother
-#6 From Rosettacode.org  Rosetta.ruleset2.yad (Slightly modified from the rules on Wikipedia)
-   Input:  I bought a B of As from T S
-   Output: I bought a bag of apples from T shop
-#7 From Rosettacode.org  Rosetta.ruleset3.yad (BNF Syntax testing rules)
-   Input:  I bought a B of As W my Bgage from T S
-   Output: I bought a bag of apples with my money from T shop
-#8 From Rosettacode.org  Rosetta.ruleset4.yad (Unary Multiplication Engine)
-   Input:  _1111*11111_
-   Output: 11111111111111111111
-#9 From Rosettacode.org  Rosetta.ruleset5.yad (Turing machine: three-state busy beaver)
-   Input:  000000A000000
-   Output: 00011H1111000
+*1 From wiki page.   ( Hard coded test. )
+   - Input:   I bought a B of As from T S.
+   - Output:  I bought a bag of apples from my brother.
+*2 From wiki page.   ( Hard coded test. )
+   - Input: 101
+   - Output: |||||  ( binary 101 into base 10 using sticks....5 sticks)
+*3 From YAD Studio. I renamed their file renamed as YAD.Studo.mirrow.yad
+   - Input: cabbbbaaaabbbbaabbcccccc
+   - Output:
+*4 From YAD Studio. I renamed their file renamed as YAD.Studo.multiply.yad
+   - Input: |||#||   i.e. 3*2
+   - Output ||||||   i.e. 6
+*5 From Rosettacode.org  Rosetta.ruleset1.yad (This rules file is extracted from Wikipedia)
+   - Input:  I bought a B of As from T S
+   - Output: I bought a bag of apples from my brother
+*6 From Rosettacode.org  Rosetta.ruleset2.yad (Slightly modified from the rules on Wikipedia)
+   - Input:  I bought a B of As from T S
+   - Output: I bought a bag of apples from T shop
+*7 From Rosettacode.org  Rosetta.ruleset3.yad (BNF Syntax testing rules)
+   - Input:  I bought a B of As W my Bgage from T S
+   - Output: I bought a bag of apples with my money from T shop
+*8 From Rosettacode.org  Rosetta.ruleset4.yad (Unary Multiplication Engine)
+   - Input:  _1111*11111_
+   - Output: 11111111111111111111
+*9 From Rosettacode.org  Rosetta.ruleset5.yad (Turing machine: three-state busy beaver)
+   - Input:  000000A000000
+   - Output: 00011H1111000
    
 =====================================================================
 Sample console app output running Rosetta.ruleset3.yad
