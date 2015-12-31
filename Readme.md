@@ -184,4 +184,5 @@ Output from running algorithm:
 - Before: I bought a bag of apples with my money from T shop.
 - After: I bought a bag of apples with my money from the shop.
 ...
-Final string output from running algorithm: I bought a bag of apples with my money from the shop.
+###### Final string output from running algorithm: 
+- I bought a bag of apples with my money from the shop.
