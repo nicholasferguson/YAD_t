@@ -118,7 +118,9 @@ History:
 // I bought a B of As W my Bgage from T S.
 
 Engine Parsed Rules from file
-...
+* Note: -> is replaced by 0
+* Note: ->. is replaced by 1
+
 * Rule: A0apple
 * Rule: WWWW0with
 * Rule: Bgage0->.*
@@ -129,8 +131,8 @@ Engine Parsed Rules from file
 * Rule: T0the
 * Rule: the shop0my brother
 * Rule: a never used1terminating rule
-...
-Input_string before it is transformed: I bought a B of As W my Bgage from T S
+
+- Input_string before it is transformed: I bought a B of As W my Bgage from T S
 
 Output from running algorithm:
 ...
