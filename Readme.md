@@ -38,23 +38,23 @@ Done ====
 =====================================================================
 Todo =====
 =====================================================================
-Todo #1 When this app loads up rules from a file.\n
-$ -> S*   "works"\n
-$->S*     does not work.  Parse of '->' and '->.' requres spaces.\n
+Todo #1 When this app loads up rules from a file.
+	-	$ -> S*   "works"\n
+	-	$->S*     does not work.  Parse of '->' and '->.' requres spaces.
 
 Todo #2: Clean up wc2rx.cpp
-	     It is a bit hacked to run these nine examples.
+	 -    It is a bit hacked to run these nine examples.
 
 Todo #3: Process a YAD File with real regex...processed as regex symbols.
-	     This will need wc2rx.cpp to be refactored.
+	 -    This will need wc2rx.cpp to be refactored.
 
 Todo #4: Refactor Preprocessor OUTPUT=true to control std:cout's
 
 Todo #5: Reading in file, line starting as //TASK becomes ASK.
-         Correction requires a refactor of std::string rstrip(const std::string& str) in YadFile.cpp
+      -   Correction requires a refactor of std::string rstrip(const std::string& str) in YadFile.cpp
 
 Todo #6: Refactor returns from test functions in YAD_t.cpp to work with
-		 See: std::string CompareTestResults(std::string filename, std::string input)
+	  -	 See: std::string CompareTestResults(std::string filename, std::string input)
 		 
 =====================================================================
 Included Tests =(9)==== see YAD_t.cpp
