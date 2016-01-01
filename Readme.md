@@ -9,6 +9,10 @@ Introduction ====
 * Console app outputs to console each step of a rule transforming input into final output.
 
 * What this study shows... is how to devise a dictionary of rules and a rule engine.
+* It is Markov: 
+* Because it is applied over a sequence requiring that an initial rule  be applied. 
+* And subsequent rules are applied conditional on a previous unique rule having been applied.
+* And there is a rule that when applied will stop this process.   
 
 =====================================================================
 This was used a preliminary vehicle to study implementations of Markov Algorithms
@@ -152,7 +156,7 @@ Engine Parsed Rules from file
 * Rule: the shop0my brother
 * Rule: a never used1terminating rule
 
-- Input_string before it is transformed: I bought a B of As W my Bgage from T S
+- Input_string before its transition: I bought a B of As W my Bgage from T S
 
 Output from running algorithm:
 ...
