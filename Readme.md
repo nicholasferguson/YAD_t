@@ -79,9 +79,9 @@ Todo =====
 =====================================================================
 Included Tests =(9)==== see YAD_t.cpp
 ===================================================================== 
-wiki page:  		https://en.wikipedia.org/wiki/Markov_algorithm
-Rosettacode.org page: 	http://rosettacode.org/wiki/Execute_a_Markov_algorithm
-YAD Studio page: 	https://github.com/Yad-Studio/YAD-Studio
+* Wiki page:  				https://en.wikipedia.org/wiki/Markov_algorithm
+* Rosettacode.org page: 	http://rosettacode.org/wiki/Execute_a_Markov_algorithm
+* YAD Studio page: 			https://github.com/Yad-Studio/YAD-Studio
 
 ===================================================================== 
 Test# Details 
