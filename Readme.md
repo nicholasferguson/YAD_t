@@ -37,12 +37,12 @@ You can comment out various test functions in its main().
 =====================================================================
 Caveats for rules in files ====
 =====================================================================
-* U -> S* is acceptable
-* U->S* is not acceptable
-* U->.S  is not acceptable
-* U ->. S* is acceptable
-* whattheheck ->     is not acceptable
-* whattheheck -> ''  is acceptable
+* U -> S* is acceptable.  Notice spaces.
+* U->S* is not acceptable.  Notice lack of spaces.
+* U->.S  is not acceptable  Notice lack of spaces.
+* U ->. S* is acceptable.  Notice spaces.
+* whattheheck ->     is not acceptable. Notice right hand side of '->' is blank.
+* whattheheck -> ''  is acceptable.  Notice right hand side has '' to indicate blank.
 
 =====================================================================
 Done ====
@@ -61,8 +61,9 @@ Todo =====
 		- $->S*     does not work.  
 		- Parse of '->' and '->.' currently requres spaces before and after.
 
-* Todo #2: Clean up wc2rx.cpp
-		- It is a bit hacked to run these nine examples.
+* Todo #2: Clean up wc2rx.cpp and MarkovParser.cpp
+		- They are a bit hacked to run these nine examples.
+		- It lacks a C++ type explicit pattern/algorithm.
 
 * Todo #3: Process a YAD File with real regex...processed as regex symbols.
 		- This will need wc2rx.cpp to be refactored.
