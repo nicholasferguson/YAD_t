@@ -1,6 +1,14 @@
+
 =====================================================================
-Into.  Markov Algorithm.  Ported from QT/YAD Studio into a std/boost console app.
-       Refactored.  Will run all 5 rule sets from Rosettacode.org and 2 rule sets from wiki page on Markov Algorithm. And 2 rule sets from YAD studio.
+Introduction ====
+* Markov Algorithm.  
+* Ported from QT/YAD Studio into a std/boost console app, built with Visual Studio 2013.
+* Refactored so it will run all 5 rule sets from Rosettacode.org and 
+* 2 rule sets from s wiki page on Markov Algorithm. And 
+* 2 rule sets from YAD studio.
+* Console app outputs to console each step of a rule transforming input into final output.
+
+* What this study shows... is how to devise a dictionary of rules and a rule engine.
 
 =====================================================================
 This was used a preliminary vehicle to study implementations of Markov Algorithms
