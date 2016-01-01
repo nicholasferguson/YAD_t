@@ -86,16 +86,16 @@ Included Tests =(9)==== see YAD_t.cpp
 ===================================================================== 
 Test# Details 
 ===================================================================== 
-* 1 From wiki page.   ( Hard coded test. )
+* 1 From wiki page.   ( Hard coded test in YAD_t.cpp. )
    - Input:   I bought a B of As from T S.
    - Output:  I bought a bag of apples from my brother.
-* 2 From wiki page.   ( Hard coded test. )
+* 2 From wiki page.   ( Hard coded test in YAD_t.cpp. )
    - Input: 101
    - Output: |||||  ( binary 101 into base 10 using sticks....5 sticks)
-* 3 From YAD Studio. I renamed their file renamed as YAD.Studo.mirrow.yad
+* 3 From YAD Studio file. I renamed their file as YAD.Studo.mirrow.yad
    - Input:  cabbbbaaaabbbbaabbcccccc
    - Output: ccccccbbaabbbbaaaabbbbac
-* 4 From YAD Studio. I renamed their file renamed as YAD.Studo.multiply.yad
+* 4 From YAD Studio file. I renamed their file as YAD.Studo.multiply.yad
    - Input: |||#||   i.e. 3*2
    - Output ||||||   i.e. 6
 * 5 From Rosettacode.org  Rosetta.ruleset1.yad (This rules file is extracted from Wikipedia)
@@ -108,14 +108,14 @@ Test# Details
    - Input:  I bought a B of As W my Bgage from T S
    - Output: I bought a bag of apples with my money from T shop
 * 8 From Rosettacode.org  Rosetta.ruleset4.yad (Unary Multiplication Engine)
-   - Input:  _1111*11111_
-   - Output: 11111111111111111111
+   - Input:  _1111*11111_  i.e. 4*5
+   - Output: 11111111111111111111  i.e. 20
 * 9 From Rosettacode.org  Rosetta.ruleset5.yad (Turing machine: three-state busy beaver)
    - Input:  000000A000000
    - Output: 00011H1111000
    
 =====================================================================
-Sample console app output running Rosetta.ruleset3.yad
+Sample console app output running a ruleset #3 from Rosettacode.org as a file named Rosetta.ruleset3.yad
 =====================================================================
 ...
 Details from test file: Rosetta.ruleset3.yad
