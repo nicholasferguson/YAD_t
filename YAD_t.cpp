@@ -138,15 +138,15 @@ int main(int argc, char* argv[])
 {
 
 
-//	debugWikiMarkovAlgo1(); // do replacements
- //   debugWikiMarkovAlgo2(); // turn binary into a count of sticks. 101 = five sticks |||||
-//    debugMarkovAlgo3("YAD.Studo.multiply.yad", std::string("|||#||")); // 3*2 = 6
-//	debugMarkovAlgo3("YAD.Studo.mirrow.yad",std::string("cabbbbaaaabbbbaabbcccccc"));  // reverse this string.
-//	debugMarkovAlgo3("Rosetta.ruleset1.yad", std::string("I bought a B of As from T S"));  // reverse this string.
-//	debugMarkovAlgo3("Rosetta.ruleset2.yad", std::string("I bought a B of As from T S"));  // reverse this string.
+	debugWikiMarkovAlgo1(); // do replacements
+    debugWikiMarkovAlgo2(); // turn binary into a count of sticks. 101 = five sticks |||||
+    debugMarkovAlgo3("YAD.Studo.multiply.yad", std::string("|||#||")); // 3*2 = 6
+	debugMarkovAlgo3("YAD.Studo.mirrow.yad",std::string("cabbbbaaaabbbbaabbcccccc"));  // reverse this string.
+	debugMarkovAlgo3("Rosetta.ruleset1.yad", std::string("I bought a B of As from T S"));  // reverse this string.
+	debugMarkovAlgo3("Rosetta.ruleset2.yad", std::string("I bought a B of As from T S"));  // reverse this string.
 	debugMarkovAlgo3("Rosetta.ruleset3.yad", std::string("I bought a B of As W my Bgage from T S"));  // reverse this string.
-//	debugMarkovAlgo3("Rosetta.ruleset4.yad", std::string("_1111*11111_"));  // reverse this string.
-//	debugMarkovAlgo3("Rosetta.ruleset5.yad", std::string("000000A000000"));  // reverse this string.
+	debugMarkovAlgo3("Rosetta.ruleset4.yad", std::string("_1111*11111_"));  // reverse this string.
+	debugMarkovAlgo3("Rosetta.ruleset5.yad", std::string("000000A000000"));  // reverse this string.
 	return 0;
 }
 /*
