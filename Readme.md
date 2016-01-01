@@ -35,6 +35,16 @@ Main file: YAD_t.cpp
 You can comment out various test functions in its main().
 
 =====================================================================
+Caveats for rules in files ====
+=====================================================================
+* U -> S* is acceptable
+* U->S* is not acceptable
+* U->.S  is not acceptable
+* U ->. S* is acceptable
+* whattheheck ->     is not acceptable
+* whattheheck -> ''  is acceptable
+
+=====================================================================
 Done ====
 =====================================================================
 * Extracted files from YAD Studio and QT to work Markov Algorithm files from YAD Studio.
@@ -47,8 +57,9 @@ Done ====
 Todo =====
 =====================================================================
 * Todo #1 When this app loads up rules from a file.
-		- $ -> S*   "works"\n
-		- $->S*     does not work.  Parse of '->' and '->.' requres spaces.
+		- $ -> S*   "works"
+		- $->S*     does not work.  
+		- Parse of '->' and '->.' currently requres spaces before and after.
 
 * Todo #2: Clean up wc2rx.cpp
 		- It is a bit hacked to run these nine examples.
