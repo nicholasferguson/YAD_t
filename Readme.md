@@ -10,7 +10,7 @@ Introduction ====
 * 2 rule sets from YAD studio.
 * Console app outputs to console each step of a rule transitioning input into final output.
 
-* What this study shows... is how to devise a dictionary of rules and a rule engine.
+* What this study shows... is how to devise a dictionary of rules and a rule engine.  
 * It is Markov: 
 * Because it is applied over a sequence requiring that an initial rule be applied. 
 * And subsequent rules are applied conditional on a previous unique rule having been applied.
@@ -44,7 +44,7 @@ Caveats for rules in files ====
 Done ====
 =====================================================================
 * Converted one function from QT, wc2rx.  See wc2rx.cpp
-  Made wc2rx friendly to five rule sets from Rosettacode.org
+* Made wc2rx friendly to five rule sets from Rosettacode.org
   
 =====================================================================
 Todo ====
@@ -111,9 +111,10 @@ Test# Details ====
 =====================================================================
 Sample console app output running a ruleset #3 from Rosettacode.org as a file named Rosetta.ruleset3.yad
 =====================================================================
-...
-Details from test file: Rosetta.ruleset3.yad
-Source: NF Syntax testing rules
+
+* Details from test file: Rosetta.ruleset3.yad
+* BNF Syntax testing rules
+
 - A -> apple
 - WWWW -> with
 - Bgage -> ->.*
@@ -124,14 +125,11 @@ Source: NF Syntax testing rules
 - T -> the
 - the shop -> my brother
 - a never used ->. terminating rule
-...
 
+- History:
+- // I bought a B of As W my Bgage from T S.
 
-
-History:
-// I bought a B of As W my Bgage from T S.
-
-Engine Parsed Rules from file
+= Engine parses these rules as:
 * Note: -> is replaced by 0
 * Note: ->. is replaced by 1  (this symbol a final rule that ends transition)
 
@@ -148,7 +146,7 @@ Engine Parsed Rules from file
 
 - Input_string before its transition: I bought a B of As W my Bgage from T S
 
-Output from running algorithm:
+= Output from running algorithm:
 ...
 ###### Step # 1
 - Rule: A -> apple
