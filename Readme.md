@@ -234,5 +234,8 @@ Sample console app output running a ruleset #3 from Rosettacode.org as a file na
 - Before: I bought a bag of apples with my money from T shop.
 - After: I bought a bag of apples with my money from the shop.
 
+* Notice that applicable rule set has been exhausted.  Thus this transition stops.
+* It also stopped without having to apply its final rule that contains '->.'  Notice the period after '->'
+
 ###### Final string output from running algorithm: 
 - I bought a bag of apples with my money from the shop.
