@@ -2,19 +2,20 @@
 =====================================================================
 Introduction ====
 * Markov Algorithm.  
-* This was used a preliminary vehicle to study implementations of Markov Algorithms
+* This was used as a preliminary vehicle to study implementations of Markov Algorithms
 * Ported from QT/YAD Studio into a std/boost console app, built with Visual Studio 2013.
 * Refactored so it will run all 
 * 5 rule sets from Rosettacode.org (http://rosettacode.org/wiki/Execute_a_Markov_algorithm) and 
-* 2 rule sets from s wiki page on Markov Algorithm. (https://en.wikipedia.org/wiki/Markov_algorithm) And 
+* 2 rule sets from s wiki page on Markov Algorithm. (https://en.wikipedia.org/wiki/Markov_algorithm) and 
 * 2 rule sets from YAD studio.
-* Console app outputs to console each step of a rule transforming input into final output.
+* Console app outputs to console each step of a rule transitioning input into final output.
 
 * What this study shows... is how to devise a dictionary of rules and a rule engine.
 * It is Markov: 
-* Because it is applied over a sequence requiring that an initial rule  be applied. 
+* Because it is applied over a sequence requiring that an initial rule be applied. 
 * And subsequent rules are applied conditional on a previous unique rule having been applied.
 * And there is a rule that when applied will stop this process.   
+* Or applicable rules have been exhausted, and this process will thus stop.
 
 * Needed research:  How to compute probable min/max steps to completion, giving an alphabet, rule set and input string.
 
@@ -51,7 +52,7 @@ Todo ====
 * Todo #1 When this app loads up rules from a file.
 		- $ -> S*   "works"
 		- $->S*     does not work.  
-		- Parse of '->' and '->.' currently requres spaces before and after.
+		- Parse of '->' and '->.' currently requires spaces before and after.
 
 * Todo #2: Clean up wc2rx.cpp and MarkovParser.cpp
 		- They are a bit hacked to run these nine examples.
