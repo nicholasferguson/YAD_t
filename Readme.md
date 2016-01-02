@@ -2,9 +2,11 @@
 =====================================================================
 Introduction ====
 * Markov Algorithm.  
+* This was used a preliminary vehicle to study implementations of Markov Algorithms
 * Ported from QT/YAD Studio into a std/boost console app, built with Visual Studio 2013.
-* Refactored so it will run all 5 rule sets from Rosettacode.org and 
-* 2 rule sets from s wiki page on Markov Algorithm. And 
+* Refactored so it will run all 
+* 5 rule sets from Rosettacode.org (http://rosettacode.org/wiki/Execute_a_Markov_algorithm) and 
+* 2 rule sets from s wiki page on Markov Algorithm. (https://en.wikipedia.org/wiki/Markov_algorithm) And 
 * 2 rule sets from YAD studio.
 * Console app outputs to console each step of a rule transforming input into final output.
 
@@ -14,18 +16,7 @@ Introduction ====
 * And subsequent rules are applied conditional on a previous unique rule having been applied.
 * And there is a rule that when applied will stop this process.   
 
-=====================================================================
-This was used a preliminary vehicle to study implementations of Markov Algorithms
-
-I extracted Markov Algorithm related files from Yad.Studio, https://github.com/Yad-Studio/YAD-Studio/	
-and ported these files from QT over to std / boost, as a Visual Studio 2013 console application
-
-You can run YAD Studio as a checker.  This console app will run
-* 2 test files, used by YAD Studio as their examples:  multiply.yad and mirrow.yad
-* 2 test examples from a wiki page.
-	https://en.wikipedia.org/wiki/Markov_algorithm
-* 5 test examples from Rosettacode.org page, copied into files. ( see below for more details)
-	http://rosettacode.org/wiki/Execute_a_Markov_algorithm
+* Needed research:  How to compute probable min/max steps to completion, giving an alphabet, rule set and input string.
 
 =====================================================================
 To Build ====
@@ -51,14 +42,11 @@ Caveats for rules in files ====
 =====================================================================
 Done ====
 =====================================================================
-* Extracted files from YAD Studio and QT to work Markov Algorithm files from YAD Studio.
-* Converted these files from QT over to std and boost
-* This is a Visual Studio 2013 console application.
-* Also converted one function from QT, wc2rx.  See wc2rx.cpp
+* Converted one function from QT, wc2rx.  See wc2rx.cpp
   Made wc2rx friendly to five rule sets from Rosettacode.org
   
 =====================================================================
-Todo =====
+Todo ====
 =====================================================================
 * Todo #1 When this app loads up rules from a file.
 		- $ -> S*   "works"
@@ -81,14 +69,15 @@ Todo =====
 		- See: std::string CompareTestResults(std::string filename, std::string input)
 		 
 =====================================================================
-Included Tests =(9)==== see YAD_t.cpp
+Tests(9) ==== 
 ===================================================================== 
+* see YAD_t.cpp
 * Wiki page:  				https://en.wikipedia.org/wiki/Markov_algorithm
 * Rosettacode.org page: 	http://rosettacode.org/wiki/Execute_a_Markov_algorithm
 * YAD Studio page: 			https://github.com/Yad-Studio/YAD-Studio
 
 ===================================================================== 
-Test# Details 
+Test# Details ====
 ===================================================================== 
 * 1 From wiki page.   ( Hard coded test in YAD_t.cpp. )
    - Input:   I bought a B of As from T S.
@@ -143,7 +132,7 @@ History:
 
 Engine Parsed Rules from file
 * Note: -> is replaced by 0
-* Note: ->. is replaced by 1
+* Note: ->. is replaced by 1  (this symbol a final rule that ends transition)
 
 * Rule: A0apple
 * Rule: WWWW0with
