@@ -157,7 +157,7 @@ Sample console app output running a ruleset #3 from Rosettacode.org as a file na
 - B -> bag
 - ->.* -> money
 - W -> WW
-- S -> shop.
+- S ->. shop
 - T -> the
 - the shop -> my brother
 - a never used ->. terminating rule
@@ -175,7 +175,7 @@ Sample console app output running a ruleset #3 from Rosettacode.org as a file na
 * Rule: B0bag
 * Rule: ->.*0money
 * Rule: W0WW
-* Rule: S0shop.
+* Rule: S1shop.
 * Rule: T0the
 * Rule: the shop0my brother
 * Rule: a never used1terminating rule
@@ -225,17 +225,14 @@ Sample console app output running a ruleset #3 from Rosettacode.org as a file na
 - After: I bought a bag of apples with my money from T S
 
 ###### Step # 9
-- Rule: S -> shop.
+- Rule: S ->. shop
 - Before: I bought a bag of apples with my money from T S
 - After: I bought a bag of apples with my money from T shop.
 
-###### Step # 10
-- Rule: T -> the
-- Before: I bought a bag of apples with my money from T shop.
-- After: I bought a bag of apples with my money from the shop.
-
-* Notice that applicable rule set has been exhausted.  Thus this transition stops.
-* It also stopped without having to apply its final rule that contains '->.'  Notice the period after '->'
 
 ###### Final string output from running algorithm: 
-- I bought a bag of apples with my money from the shop.
+- I bought a bag of apples with my money from T shop.
+
+Summary of why rules stopped being applied.
+Rule #9 has a rule of LHS ->. RHS and ->. indicates final rule to be applied.
+
