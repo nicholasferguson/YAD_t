@@ -169,15 +169,15 @@ Sample console app output running a ruleset #3 from Rosettacode.org as a file na
 * Note: -> is replaced by 0
 * Note: ->. is replaced by 1  (this symbol a final rule that ends transition)
 
-* Rule: A0apple
-* Rule: WWWW0with
-* Rule: Bgage0->.*
-* Rule: B0bag
-* Rule: ->.*0money
-* Rule: W0WW
-* Rule: S1shop.
-* Rule: T0the
-* Rule: the shop0my brother
+* Rule1: A0apple
+* Rule2: WWWW0with
+* Rule3: Bgage0->.*
+* Rule4: B0bag
+* Rule5: ->.*0money
+* Rule6: W0WW
+* Rule7: S1shop
+* Rule8: T0the
+* Rule9: the shop0my brother
 * Rule: a never used1terminating rule
 
 - Input_string before its transition: I bought a B of As W my Bgage from T S
@@ -234,5 +234,5 @@ Sample console app output running a ruleset #3 from Rosettacode.org as a file na
 - I bought a bag of apples with my money from T shop.
 
 Summary of why rules stopped being applied.
-Rule #9 has a rule of LHS ->. RHS and ->. indicates final rule to be applied.
+Step #9 applies Rule #7 of type "LHS ->. RHS" and '->.' indicates final rule to be applied.
 
