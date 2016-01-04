@@ -178,7 +178,7 @@ Sample console app output running a ruleset #3 from Rosettacode.org as a file na
 * Rule7: S1shop
 * Rule8: T0the
 * Rule9: the shop0my brother
-* Rule: a never used1terminating rule
+* Rule:10 a never used1terminating rule
 
 - Input_string before its transition: I bought a B of As W my Bgage from T S
 
